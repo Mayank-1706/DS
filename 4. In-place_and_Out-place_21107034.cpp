@@ -87,9 +87,10 @@ int main()
     cout<<"Sorting Using IN place sorting technique";
     insertion_sort_in(arr,n);
     print(arr,n);
+    
     cout<<"Sorting Using OUT place sorting technique";
     insertion_sort_OP(new_arr,0,n-1);
-    print(arr,n);
+    print(new_arr,n);
     
 }
 
