@@ -81,11 +81,14 @@ int main()
     for (int i=0;i<n;i++){
         cin>>arr[i];
     }
+    for (int i=0;i<n;i++){
+        arr[i]=new_arr[i];
+    }
     cout<<"Sorting Using IN place sorting technique";
     insertion_sort_in(arr,n);
     print(arr,n);
     cout<<"Sorting Using OUT place sorting technique";
-    insertion_sort_OP(arr,0,n-1);
+    insertion_sort_OP(new_arr,0,n-1);
     print(arr,n);
     
 }
